@@ -1,0 +1,193 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+
+}
+
+body{
+	font-family: Helvetica;
+	font-size: 20px;
+}
+
+h1 {
+  margin-bottom: 15px;
+
+font-size: 175%;
+  text-align: center;
+}
+
+p {
+margin: 8px;
+margin-bottom: 16px;
+  border: 1px solid black;
+  background-color: #9a0fd6;
+  width: 90%;
+  height: 130px;
+  
+  
+  margin-right: auto;
+  margin-left: auto;
+  
+
+  color: white;
+  
+}
+
+h2{
+	border: 1px solid black;
+  background-color: cyan;
+  width: 20%;
+  height: 30px;
+  font-size: 125%;
+  
+  
+  text-align: center;
+  margin: 0px;/*para que no se cree espacio extra arriba y abajoo*/
+
+  
+}
+
+/* Simple Responsive Framework. */
+#row {
+ width: 100%;
+}
+
+#container{
+	position: relative;
+}
+
+.box {/*esta es para separar el texto p de lps div*/
+	padding: 8px;
+	padding-top: 26px;
+}
+
+
+
+/*DESKTOP VIEW*/
+@media (min-width: 992px){
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col.lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+
+	float: left;
+	border: cyan;
+}
+
+.col-lg-4{
+	width: 33.33%;
+}
+
+h2 {
+	/*para moverlo hacia la derecha y posicionarlo*/
+  position: absolute;
+  top: 8px;
+}
+
+#firstTitle{
+			left: 11.66%;
+	}
+
+
+#secondTitle{
+    left: 45%;
+
+
+}
+
+
+#thirdTitle{
+    left: 78.33%;
+
+}
+
+
+}
+
+/*TABLET VIEW*/
+@media (min-width: 768px) and (max-width: 991px){
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col.md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+
+	float: left;
+	
+}
+
+.col-md-6{
+	width: 50%;
+
+}
+
+#lastRow {
+	width: 95%;
+	clear: both;
+}
+
+#previousRows {
+	margin-bottom: 24px;
+}
+
+h2 {
+	/*para moverlo hacia la derecha y posicionarlo*/
+  position: absolute;
+  top: 8px;
+}
+
+#firstTitle{
+		left: 27.5%;
+	}
+
+
+#secondTitle{
+    left: 77.5%;
+
+
+}
+
+
+#thirdTitle{
+	top: 178px;
+	left: 77.5%;
+
+}
+
+}
+
+/*MOBILE VIEW*/
+@media(max-width: 767px){
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col.sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{
+
+	float: left;
+	border: cyan;
+	
+}
+
+.col-sm-12{
+	width: 100%;
+}
+
+
+h2 {
+	/*para moverlo hacia la derecha y posicionarlo*/
+  position: absolute;
+  left: 75%;/*5% de cada lado de la fila que es 90% + los 20% que mide el titulo, se hacen 25% menos los 100% totales es igual a 75%*/
+}
+
+#firstTitle{
+		top: 8px;
+	}
+
+
+#secondTitle{
+	top: 162px;
+	
+
+}
+/*154 de diferencia con el anterior*/
+
+#thirdTitle{
+	top: 316px;
+	
+
+}
+/*154 de diferencia con el anterior*/
+
+
+
+}
